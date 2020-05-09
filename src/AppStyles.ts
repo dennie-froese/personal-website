@@ -1,9 +1,17 @@
+import { findByLabelText } from "@testing-library/dom";
+
 const style = {
   textContainer: {
     textalign: "center"
   },
-  textheader: {
-    color: "white"
+  textHeader: {
+    color: "white",
+    backgroundColor: "grey",
+    display: "flex",
+    height: "100vh",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: 30
   }
 } as { [key: string]: React.CSSProperties };
 
