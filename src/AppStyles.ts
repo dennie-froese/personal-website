@@ -1,3 +1,14 @@
+const style = {
+  textContainer: {
+    textalign: "center"
+  },
+  textheader: {
+    color: "white"
+  }
+} as { [key: string]: React.CSSProperties };
+
+export default style;
+/* 
 .App {
   text-align: center;
 }
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
