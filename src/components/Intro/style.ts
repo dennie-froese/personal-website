@@ -3,7 +3,9 @@ const style = {
     backgroundColor: "white",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
+    paddingTop: "10%",
+    paddingBottom: "10%"
   },
   subContainer: {
     width: "50%",

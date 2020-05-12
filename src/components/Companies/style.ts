@@ -1,6 +1,6 @@
 const style = {
   container: {
-    backgroundColor: "lightgrey",
+    backgroundColor: "white",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
