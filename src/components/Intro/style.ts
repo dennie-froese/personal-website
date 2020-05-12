@@ -4,9 +4,17 @@ const style = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    paddingTop: "10%",
     paddingBottom: "10%"
   },
+  headerContainer: {
+    backgroundColor: "white",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: "2%",
+    alignItems: "center"
+  },
+  logo: { width: "10%", height: "10%" },
   subContainer: {
     width: "50%",
     paddingBottom: 40

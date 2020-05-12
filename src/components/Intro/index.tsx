@@ -4,16 +4,19 @@ import PersonalLogo from "../../images/PersonalLogo.png";
 
 export default function Intro() {
   return (
-    <div style={style.container}>
-      <div>
-        <img src={PersonalLogo} />
+    <>
+      <div style={style.headerContainer}>
+        <img style={style.logo} src={PersonalLogo} />
+        <p> Test</p>
       </div>
-      <p style={style.textHeader}> Front-end developer and designer</p>
-      <div style={style.subContainer}>
-        <p style={style.textMain}>
-          I like to design and develop user interfaces!
-        </p>
+      <div style={style.container}>
+        <p style={style.textHeader}> Front-end developer and designer</p>
+        <div style={style.subContainer}>
+          <p style={style.textMain}>
+            I like to design and develop user interfaces!
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
