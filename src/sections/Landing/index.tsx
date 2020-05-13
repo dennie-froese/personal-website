@@ -1,13 +1,14 @@
 import React from "react";
 import style from "./style";
 import PersonalLogo from "../../images/PersonalLogo.png";
+import Button from "../../components/Button";
 
 export default function Landing() {
   return (
     <>
       <div style={style.headerContainer}>
         <img style={style.logo} src={PersonalLogo} />
-        <p> Test</p>
+        <Button />
       </div>
       <div style={style.container}>
         <p style={style.textHeader}> Front-end developer and designer</p>
