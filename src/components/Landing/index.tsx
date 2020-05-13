@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style";
 import PersonalLogo from "../../images/PersonalLogo.png";
 
-export default function Intro() {
+export default function Landing() {
   return (
     <>
       <div style={style.headerContainer}>
