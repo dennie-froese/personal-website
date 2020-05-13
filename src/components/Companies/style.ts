@@ -1,6 +1,8 @@
+import { secondaryColor, secondaryTextColor } from "../../constants/styles";
+
 const style = {
   container: {
-    backgroundColor: "white",
+    backgroundColor: secondaryColor,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -12,13 +14,13 @@ const style = {
   },
   textHeader: {
     fontSize: 30,
-    color: "black",
+    color: secondaryTextColor,
     fontWeight: "bold",
     textAlign: "center"
   },
   textMain: {
     fontSize: 20,
-    color: "black",
+    color: secondaryTextColor,
     textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };

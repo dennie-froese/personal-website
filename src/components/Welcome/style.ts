@@ -1,6 +1,8 @@
+import { primaryColor, primaryTextColor } from "../../constants/styles";
+
 const style = {
   container: {
-    backgroundColor: "lightgrey",
+    backgroundColor: primaryColor,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -12,13 +14,13 @@ const style = {
   },
   textHeader: {
     fontSize: 30,
-    color: "black",
+    color: primaryTextColor,
     fontWeight: "bold",
     textAlign: "center"
   },
   textMain: {
     fontSize: 20,
-    color: "black",
+    color: primaryTextColor,
     textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };

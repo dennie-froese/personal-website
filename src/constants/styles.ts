@@ -1,1 +1,4 @@
-export const darkblue = "#06060d";
+export const primaryColor = "#0062ff";
+export const primaryTextColor = "#ffffff";
+export const secondaryColor = "#ffffff";
+export const secondaryTextColor = "#000000";
