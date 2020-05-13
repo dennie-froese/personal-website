@@ -3,6 +3,7 @@ import style from "./AppStyles";
 import Welcome from "./components/Welcome";
 import Landing from "./components/Landing";
 import Companies from "./components/Companies";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Landing />
       <Welcome />
       <Companies />
+      <Testimonials />
     </div>
   );
 }

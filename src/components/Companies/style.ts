@@ -7,7 +7,9 @@ const style = {
     flexDirection: "column",
     alignItems: "center",
     paddingTop: "10%",
-    paddingBottom: "10%"
+    paddingBottom: "10%",
+    borderBottom: "1px solid",
+    borderBottomColor: "lightgrey"
   },
   subContainer: {
     width: "50%"

@@ -6,29 +6,17 @@ const style = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    paddingTop: "10%",
     paddingBottom: "10%"
   },
-  headerContainer: {
-    backgroundColor: secondaryColor,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    padding: "2%"
-  },
-  logo: {
-    width: "10%",
-    height: "10%"
-  },
   subContainer: {
-    width: "50%",
-    paddingBottom: 40
+    width: "50%"
   },
   textHeader: {
-    fontSize: 40,
+    fontSize: 30,
     color: secondaryTextColor,
     fontWeight: "bold",
-    textAlign: "center",
-    paddingTop: 20
+    textAlign: "center"
   },
   textMain: {
     fontSize: 20,
