@@ -9,17 +9,20 @@ const style = {
     paddingTop: "10%",
     paddingBottom: "10%"
   },
-  subContainer: {
-    width: "50%"
-  },
-  textHeader: {
-    fontSize: 30,
+  textFeedback: {
+    fontSize: 20,
     color: secondaryTextColor,
-    fontWeight: "bold",
     textAlign: "center"
   },
-  textMain: {
+  name: {
+    fontSize: 25,
+    fontWeight: "bold",
+    color: secondaryTextColor,
+    textAlign: "center"
+  },
+  title: {
     fontSize: 20,
+    fontStyle: "italic",
     color: secondaryTextColor,
     textAlign: "center"
   }
