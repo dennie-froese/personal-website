@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./AppStyles";
-import Welcome from "./components/Welcome";
-import Landing from "./components/Landing";
-import Companies from "./components/Companies";
-import Testimonials from "./components/Testimonials";
+import Welcome from "./sections/Welcome";
+import Landing from "./sections/Landing";
+import Companies from "./sections/Companies";
+import Testimonials from "./sections/Testimonials";
 
 export default function App() {
   return (

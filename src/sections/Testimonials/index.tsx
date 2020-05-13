@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./style";
+import Testimonial from "../../components/Testimonial";
 
 export default function Testimonials() {
   return (
@@ -7,7 +8,7 @@ export default function Testimonials() {
       <p style={style.textHeader}>Testimonials</p>
       <p>People I worked with in the past have said some nice things :)</p>
       <div style={style.subContainer}>
-        <p style={style.textMain}>logos tbd</p>
+        <Testimonial />
       </div>
     </div>
   );
