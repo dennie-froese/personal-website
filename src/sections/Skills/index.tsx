@@ -12,7 +12,6 @@ export default function Skills() {
           <Column key={i} content={col} />
         ))}
       </div>
-      <Separator />
     </div>
   );
 }
