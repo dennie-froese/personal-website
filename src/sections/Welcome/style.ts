@@ -10,7 +10,8 @@ const style = {
     paddingBottom: "10%"
   },
   subContainer: {
-    width: "50%"
+    width: "50%",
+    paddingBottom: "10%"
   },
   textHeader: {
     fontSize: 30,
