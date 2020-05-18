@@ -5,7 +5,6 @@ const style = {
     backgroundColor: secondaryColor,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
     borderBottom: "1px solid",
     borderColor: "lightgrey",
     paddingTop: "10%",
@@ -17,10 +16,10 @@ const style = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
+    padding: "5%",
     border: "2px solid",
     borderColor: "lightgrey",
-    borderRadius: "10px",
-    padding: "5%"
+    borderRadius: "10px"
   }
 } as { [key: string]: React.CSSProperties };
 

@@ -4,19 +4,17 @@ const style = {
   column: {
     display: "flex",
     flexDirection: "column",
-    alignContent: "space-around"
+    alignItems: "center"
   },
   textHeader: {
     fontSize: 30,
     color: secondaryTextColor,
     fontWeight: "bold",
-    textAlign: "center",
     padding: "10"
   },
   textMain: {
     fontSize: 20,
-    color: secondaryTextColor,
-    textAlign: "center"
+    color: secondaryTextColor
   }
 } as { [key: string]: React.CSSProperties };
 

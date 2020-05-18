@@ -7,9 +7,9 @@ export default function Skills() {
   return (
     <div style={style.container}>
       <div style={style.subContainer}>
-        <Column />
+        <Column title="Designer" />
         <Separator />
-        <Column />
+        <Column title="Front-end developer" />
       </div>
     </div>
   );
