@@ -18,10 +18,11 @@ export const content: ColumnArray = {
   columns: [
     {
       title: "Designer",
-      subtitle: "I love to design clean and thoughtful user interfaces.",
+      subtitle:
+        "I love to design clean and thoughtful user interfaces, with contents structured in a simple and user-friendly way.",
       skills: {
         title: "Things I like to design:",
-        skills: ["UI, Web, Mobile, Apps, Logos"]
+        skills: ["UI, Web, Mobile, Apps, Logos", ""]
       },
       tools: {
         title: "Design tools:",
@@ -31,22 +32,17 @@ export const content: ColumnArray = {
     {
       title: "Front-end Developer",
       subtitle:
-        "I enjoy coding things from scratch and bringing ideas to life in mobile and web apps.",
+        "I enjoy developing things from scratch and bringing ideas to life in mobile and web apps.",
       skills: {
         title: "Languages and frameworks I use:",
-        skills: ["React, React Native, Redux", "Javascript, Typescript, VBA"]
+        skills: [
+          "React, React Native, Redux, Javascript",
+          "Typescript, Jest testing, VBA"
+        ]
       },
       tools: {
         title: "Dev tools:",
-        skills: [
-          "VSCode",
-          "Github",
-          "Gitlab",
-          "Jest",
-          "Terminal",
-          "Z shell",
-          "Fastlane"
-        ]
+        skills: ["VSCode", "Github", "Terminal / Z shell"]
       }
     }
   ]

@@ -8,9 +8,9 @@ export default function Skills() {
   return (
     <div style={style.container}>
       <div style={style.subContainer}>
-        {content.columns.map((col, i) => (
-          <Column key={i} content={col} />
-        ))}
+        <Column content={content.columns[0]} />
+        <Separator />
+        <Column content={content.columns[1]} />
       </div>
     </div>
   );
