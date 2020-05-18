@@ -3,7 +3,7 @@ type Skill = {
   skills: string[];
 };
 
-export type Column = {
+export type ColumnContent = {
   title: string;
   subtitle: string;
   skills: Skill;
@@ -11,7 +11,7 @@ export type Column = {
 };
 
 export type ColumnArray = {
-  columns: Column[];
+  columns: ColumnContent[];
 };
 
 export const content: ColumnArray = {
@@ -42,6 +42,7 @@ export const content: ColumnArray = {
           "VSCode",
           "Github",
           "Gitlab",
+          "Jest",
           "Terminal",
           "Z shell",
           "Fastlane"
