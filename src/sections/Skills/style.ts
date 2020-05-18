@@ -19,7 +19,8 @@ const style = {
     justifyContent: "space-around",
     border: "2px solid",
     borderColor: "lightgrey",
-    borderRadius: "10px"
+    borderRadius: "10px",
+    padding: "5%"
   }
 } as { [key: string]: React.CSSProperties };
 
