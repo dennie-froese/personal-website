@@ -10,18 +10,12 @@ const style = {
     paddingBottom: "10%"
   },
   subContainer: {
-    width: "50%",
-    paddingBottom: "10%"
+    width: "50%"
   },
   textHeader: {
     fontSize: 30,
     color: primaryTextColor,
     fontWeight: "bold",
-    textAlign: "center"
-  },
-  textMain: {
-    fontSize: 20,
-    color: primaryTextColor,
     textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };
