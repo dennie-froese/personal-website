@@ -18,10 +18,11 @@ const style = {
     fontWeight: "bold",
     textAlign: "center"
   },
-  textMain: {
-    fontSize: 20,
-    color: secondaryTextColor,
-    textAlign: "center"
+  buttons: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center"
   }
 } as { [key: string]: React.CSSProperties };
 

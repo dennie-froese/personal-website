@@ -1,22 +1,20 @@
 import React from "react";
 import style from "./style";
+import { TestimonialType } from "../../sections/Testimonials/content";
 
-export default function Testimonial() {
+interface Props {
+  content: TestimonialType;
+}
+
+export default function Testimonial({ content }: Props) {
   return (
     <div style={style.container}>
-      <p> image placeholder</p>
+      <p>{content.image ? content.image : "Image"}</p>
       <p style={style.textFeedback}>
-        "I worked with Dennie. I worked with Dennie. I worked with Dennie. I
-        worked with Dennie. I worked with Dennie. I worked with Dennie. I worked
-        with Dennie. I worked with Dennie. I worked with Dennie. I worked with
-        Dennie. I worked with Dennie. I worked with Dennie. I worked with
-        Dennie. I worked with Dennie. I worked with Dennie. I worked with
-        Dennie. I worked with Dennie. I worked with Dennie. I worked with
-        Dennie. I worked with Dennie. I worked with Dennie. I worked with
-        Dennie."
+        {content.feedback ? content.feedback : "Feedback"}
       </p>
-      <p style={style.name}>Name</p>
-      <p style={style.title}>Head of XYZ</p>
+      <p style={style.name}>{content.name ? content.name : "Name"}</p>
+      <p style={style.title}>{content.role ? content.role : "Role"}</p>
     </div>
   );
 }
