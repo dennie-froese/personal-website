@@ -36,7 +36,8 @@ export const content: ColumnArray = {
       skills: {
         title: "Languages and frameworks I use:",
         skills: [
-          "React, React Native, Redux, Javascript, Typescript, Jest testing, VBA"
+          "Javascript, Typescript, VBA",
+          "React, React Native, Redux, Jest testing"
         ]
       },
       tools: {
