@@ -1,9 +1,10 @@
 import React from "react";
 import style from "./style";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Testimonial from "../../components/Testimonial";
 import { content } from "./content";
+import "./index.css";
 
 export default function Testimonials() {
   return (
@@ -23,8 +24,13 @@ export default function Testimonials() {
               </Slide>
             ))}
           </Slider>
-          <div style={style.buttons}>
-            <DotGroup showAsSelectedForCurrentSlideOnly />
+          <div style={style.buttonContainer}>
+            <Dot slide={0}>
+              <></>
+            </Dot>
+            <Dot slide={1}>
+              <></>
+            </Dot>
           </div>
         </CarouselProvider>
       </div>

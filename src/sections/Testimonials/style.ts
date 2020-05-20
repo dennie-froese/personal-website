@@ -18,7 +18,7 @@ const style = {
     fontWeight: "bold",
     textAlign: "center"
   },
-  buttons: {
+  buttonContainer: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
