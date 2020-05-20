@@ -42,7 +42,7 @@ export const content: ColumnArray = {
       },
       tools: {
         title: "Dev tools:",
-        skills: ["VSCode", "Github", "Terminal / Z shell"]
+        skills: ["VSCode", "Github", "Command line / Z shell"]
       }
     }
   ]
