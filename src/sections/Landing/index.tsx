@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <>
       <div style={style.headerContainer}>
-        <img style={style.logo} src={PersonalLogo} />
+        <img style={style.logo} src={PersonalLogo} alt="" />
         <Button />
       </div>
       <div style={style.container}>
