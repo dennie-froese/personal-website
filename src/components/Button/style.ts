@@ -2,8 +2,11 @@ import { primaryColor } from "../../constants/styles";
 
 const style = {
   button: {
-    border: `2px solid ${primaryColor}`,
-    borderRadius: 10
+    border: `3px solid ${primaryColor}`,
+    borderRadius: 30
+  },
+  text: {
+    fontWeight: "bold"
   }
 } as { [key: string]: React.CSSProperties };
 

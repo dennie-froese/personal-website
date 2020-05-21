@@ -8,7 +8,7 @@ export default function Button() {
       style={style.button}
       href="mailto:denfroese@gmail.com?subject=Hi Dennie!"
     >
-      <p style={style.text}>Get in touch!</p>
+      <p style={style.text}>Say hello</p>
     </a>
   );
 }
