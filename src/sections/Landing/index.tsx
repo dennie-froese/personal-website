@@ -2,6 +2,7 @@ import React from "react";
 import style from "./style";
 import PersonalLogo from "../../images/PersonalLogo.png";
 import Button from "../../components/Button";
+import Avatar from "../../images/Avatar-nobackground.png";
 
 export default function Landing() {
   return (
@@ -16,6 +17,7 @@ export default function Landing() {
           <p style={style.textMain}>
             I like to design and develop user interfaces!
           </p>
+          <img style={style.avatar} src={Avatar} alt="" />
         </div>
       </div>
     </>

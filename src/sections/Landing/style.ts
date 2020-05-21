@@ -17,19 +17,24 @@ const style = {
     padding: "2%"
   },
   logo: {
-    width: "10%",
-    height: "10%"
+    width: "8%",
+    height: "8%"
   },
   subContainer: {
     width: "50%",
-    paddingBottom: 40
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  },
+  avatar: {
+    width: "20%",
+    height: "20%"
   },
   textHeader: {
     fontSize: 40,
     color: secondaryTextColor,
     fontWeight: "bold",
-    textAlign: "center",
-    paddingTop: 20
+    textAlign: "center"
   },
   textMain: {
     fontSize: 20,
