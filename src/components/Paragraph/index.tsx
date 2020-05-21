@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style";
-import { Paragraphs } from "../../sections/Welcome/content";
 
 interface Props {
   content: String;

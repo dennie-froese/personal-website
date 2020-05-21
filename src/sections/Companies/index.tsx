@@ -12,10 +12,10 @@ export default function Companies() {
         I'm proud to have worked for some amazing companies and brands:
       </p>
       <div style={style.subContainer}>
-        <img style={style.logo} src={santander} />
-        <img style={style.logo} src={porsche} />
-        <img style={style.logo} src={loreal} />
-        <img style={style.logo} src={johnson} />
+        <img style={style.logo} alt="" src={santander} />
+        <img style={style.logo} alt="" src={porsche} />
+        <img style={style.logo} alt="" src={loreal} />
+        <img style={style.logo} alt="" src={johnson} />
       </div>
     </div>
   );
