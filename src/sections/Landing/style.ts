@@ -17,8 +17,8 @@ const style = {
     padding: "2%"
   },
   logo: {
-    width: "8%",
-    height: "8%"
+    width: "10%",
+    height: "10%"
   },
   subContainer: {
     width: "50%",
