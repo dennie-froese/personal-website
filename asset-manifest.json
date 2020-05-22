@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.fc23f739.chunk.css",
-    "main.js": "/personal-website/static/js/main.52d97211.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.52d97211.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.dd8eb262.chunk.css",
+    "main.js": "/personal-website/static/js/main.5617fbda.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.5617fbda.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.442aafae.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.442aafae.js.map",
-    "static/js/2.c0a748c8.chunk.js": "/personal-website/static/js/2.c0a748c8.chunk.js",
-    "static/js/2.c0a748c8.chunk.js.map": "/personal-website/static/js/2.c0a748c8.chunk.js.map",
+    "static/js/2.80c2d732.chunk.js": "/personal-website/static/js/2.80c2d732.chunk.js",
+    "static/js/2.80c2d732.chunk.js.map": "/personal-website/static/js/2.80c2d732.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "precache-manifest.52e369b27a82671ecbb4dddc6ba7dea1.js": "/personal-website/precache-manifest.52e369b27a82671ecbb4dddc6ba7dea1.js",
+    "precache-manifest.d83c20fb0d61f3fa8504f6e6a2096328.js": "/personal-website/precache-manifest.d83c20fb0d61f3fa8504f6e6a2096328.js",
     "service-worker.js": "/personal-website/service-worker.js",
-    "static/css/main.fc23f739.chunk.css.map": "/personal-website/static/css/main.fc23f739.chunk.css.map",
-    "static/js/2.c0a748c8.chunk.js.LICENSE.txt": "/personal-website/static/js/2.c0a748c8.chunk.js.LICENSE.txt",
+    "static/css/main.dd8eb262.chunk.css.map": "/personal-website/static/css/main.dd8eb262.chunk.css.map",
+    "static/js/2.80c2d732.chunk.js.LICENSE.txt": "/personal-website/static/js/2.80c2d732.chunk.js.LICENSE.txt",
+    "static/media/Avatar-nobackground.png": "/personal-website/static/media/Avatar-nobackground.a293bd25.png",
     "static/media/PersonalLogo.png": "/personal-website/static/media/PersonalLogo.7da3e2fb.png",
     "static/media/johnson.png": "/personal-website/static/media/johnson.5cd24e35.png",
     "static/media/porsche.svg": "/personal-website/static/media/porsche.c67f50c5.svg",
@@ -19,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.442aafae.js",
-    "static/js/2.c0a748c8.chunk.js",
-    "static/css/main.fc23f739.chunk.css",
-    "static/js/main.52d97211.chunk.js"
+    "static/js/2.80c2d732.chunk.js",
+    "static/css/main.dd8eb262.chunk.css",
+    "static/js/main.5617fbda.chunk.js"
   ]
 }
