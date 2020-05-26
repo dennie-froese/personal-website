@@ -1,9 +1,9 @@
-import { primaryTextColor } from "../../constants/styles";
+import { secondaryTextColor } from "../../constants/styles";
 
 const style = {
   text: {
-    fontSize: 20,
-    color: primaryTextColor,
+    fontFamily: "Roboto Slab",
+    color: secondaryTextColor,
     textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };
