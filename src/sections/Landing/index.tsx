@@ -3,6 +3,8 @@ import style from "./style";
 import PersonalLogo from "../../images/PersonalLogo.png";
 import Button from "../../components/Button";
 import Avatar from "../../images/Avatar-nobackground.png";
+import HeadinBold from "../../components/HeadingBold";
+import SubHeading from "../../components/SubHeading";
 
 export default function Landing() {
   return (
@@ -12,11 +14,9 @@ export default function Landing() {
         <Button />
       </div>
       <div style={style.container}>
-        <p style={style.textHeader}> Front-end developer and designer</p>
+        <HeadinBold>Front-end developer and designer</HeadinBold>
         <div style={style.subContainer}>
-          <p style={style.textMain}>
-            I like to design and develop user interfaces!
-          </p>
+          <SubHeading>I like to design and develop user interfaces!</SubHeading>
           <img style={style.avatar} src={Avatar} alt="" />
         </div>
       </div>

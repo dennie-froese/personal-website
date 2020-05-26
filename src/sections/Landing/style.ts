@@ -29,17 +29,6 @@ const style = {
   avatar: {
     width: "20%",
     height: "20%"
-  },
-  textHeader: {
-    fontSize: 40,
-    color: secondaryTextColor,
-    fontWeight: "bold",
-    textAlign: "center"
-  },
-  textMain: {
-    fontSize: 20,
-    color: secondaryTextColor,
-    textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };
 
