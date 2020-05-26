@@ -1,15 +1,18 @@
 import React from "react";
 import style from "./style";
 import { paragraphs } from "./content";
-import Paragraph from "../../components/Paragraph";
+import TextBody from "../../components/TextBody";
+import HeadingBold from "../../components/HeadingBold";
 
 export default function Welcome() {
   return (
     <div style={style.container}>
-      <p style={style.textHeader}> Hi, I'm Dennie. Nice to meet you!</p>
+      <HeadingBold primaryTextColorBool={true}>
+        Hi, I'm Dennie. Nice to meet you!
+      </HeadingBold>
       <div style={style.subContainer}>
         {paragraphs.text.map((text, i) => (
-          <Paragraph content={text} key={i} />
+          <TextBody primaryTextColorBool>{text}</TextBody>
         ))}
       </div>
     </div>
