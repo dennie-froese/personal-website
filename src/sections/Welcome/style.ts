@@ -1,4 +1,4 @@
-import { primaryColor, primaryTextColor } from "../../constants/styles";
+import { primaryColor } from "../../constants/styles";
 
 const style = {
   container: {

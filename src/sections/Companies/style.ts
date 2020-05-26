@@ -1,4 +1,4 @@
-import { secondaryColor, secondaryTextColor } from "../../constants/styles";
+import { secondaryColor } from "../../constants/styles";
 
 const style = {
   container: {
@@ -16,14 +16,8 @@ const style = {
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
-    width: "70%"
-  },
-  textHeader: {
-    fontSize: 30,
-    color: secondaryTextColor,
-    fontWeight: "bold",
-    textAlign: "center",
-    paddingBottom: "5%"
+    width: "70%",
+    paddingTop: "5%"
   },
   logo: {
     width: "25%",

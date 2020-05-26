@@ -7,7 +7,7 @@ import HeadingBold from "../../components/HeadingBold";
 export default function Welcome() {
   return (
     <div style={style.container}>
-      <HeadingBold primaryTextColorBool={true}>
+      <HeadingBold fontSize={35} primaryTextColorBool>
         Hi, I'm Dennie. Nice to meet you!
       </HeadingBold>
       <div style={style.subContainer}>

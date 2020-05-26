@@ -4,13 +4,14 @@ import porsche from "../../images/porsche.svg";
 import santander from "../../images/santander.svg";
 import johnson from "../../images/johnson.png";
 import loreal from "../../images/loreal.png";
+import HeadingBold from "../../components/HeadingBold";
 
 export default function Companies() {
   return (
     <div style={style.container}>
-      <p style={style.textHeader}>
+      <HeadingBold fontSize={35}>
         I'm proud to have worked for some amazing companies and brands:
-      </p>
+      </HeadingBold>
       <div style={style.subContainer}>
         <img style={style.logo} alt="" src={santander} />
         <img style={style.logo} alt="" src={porsche} />
