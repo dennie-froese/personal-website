@@ -5,16 +5,20 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import Testimonial from "../../components/Testimonial";
 import { content } from "./content";
 import "./index.css";
+import HeadingBold from "../../components/HeadingBold";
+import TextBody from "../../components/TextBody";
 
 export default function Testimonials() {
   return (
     <div style={style.container}>
-      <p style={style.textHeader}>Testimonials</p>
-      <p>People I worked with in the past have said some nice things :)</p>
+      <HeadingBold fontSize={30}>Testimonials</HeadingBold>
+      <TextBody fontSize={18}>
+        People I worked with in the past have said some nice things:
+      </TextBody>
       <div style={style.subContainer}>
         <CarouselProvider
           naturalSlideWidth={600}
-          naturalSlideHeight={500}
+          naturalSlideHeight={600}
           totalSlides={2}
         >
           <Slider>

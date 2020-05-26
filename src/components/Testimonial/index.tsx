@@ -3,6 +3,8 @@ import style from "./style";
 import { TestimonialType } from "../../sections/Testimonials/content";
 import Ceri from "../../images/ceri.jpeg";
 import Friede from "../../images/friede.jpg";
+import TextBody from "../TextBody";
+import HeadingBold from "../HeadingBold";
 
 interface Props {
   content: TestimonialType;
@@ -18,11 +20,11 @@ export default function Testimonial({ content }: Props) {
           alt=""
         />
       </div>
-      <p style={style.textFeedback}>
-        {content.feedback ? content.feedback : "Feedback"}
-      </p>
-      <p style={style.name}>{content.name ? content.name : "Name"}</p>
-      <p style={style.title}>{content.role ? content.role : "Role"}</p>
+      <TextBody>{content.feedback ? content.feedback : "Feedback"}</TextBody>
+      <HeadingBold fontSize={25}>
+        {content.name ? content.name : "Name"}
+      </HeadingBold>
+      <TextBody>{content.role ? content.role : "Role"}</TextBody>
     </div>
   );
 }

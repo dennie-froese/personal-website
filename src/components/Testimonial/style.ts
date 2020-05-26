@@ -10,11 +10,6 @@ const style = {
     paddingTop: "10%",
     paddingBottom: "10%"
   },
-  textFeedback: {
-    fontSize: 20,
-    color: secondaryTextColor,
-    textAlign: "center"
-  },
   imageWrap: {
     display: "flex",
     borderRadius: "50%",
@@ -28,18 +23,6 @@ const style = {
   logo: {
     width: "100%",
     height: "100%"
-  },
-  name: {
-    fontSize: 25,
-    fontWeight: "bold",
-    color: secondaryTextColor,
-    textAlign: "center"
-  },
-  title: {
-    fontSize: 20,
-    fontStyle: "italic",
-    color: secondaryTextColor,
-    textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };
 

@@ -12,12 +12,6 @@ const style = {
   subContainer: {
     width: "50%"
   },
-  textHeader: {
-    fontSize: 30,
-    color: secondaryTextColor,
-    fontWeight: "bold",
-    textAlign: "center"
-  },
   buttonContainer: {
     display: "flex",
     flexDirection: "row",
