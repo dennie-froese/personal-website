@@ -31,7 +31,7 @@ export const content: ColumnArray = {
         title: "Dev tools:",
         skills: ["VSCode", "Github", "Command line / Z shell"]
       }
-    },s
+    },
     {
       title: "Designer",
       subtitle:

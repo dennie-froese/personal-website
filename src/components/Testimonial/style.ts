@@ -15,9 +15,19 @@ const style = {
     color: secondaryTextColor,
     textAlign: "center"
   },
+  imageWrap: {
+    display: "flex",
+    borderRadius: "50%",
+    alignItems: "center",
+    justifyItems: "center",
+    width: "15%",
+    height: "15%",
+    backgroundColor: "white",
+    overflow: "hidden"
+  },
   logo: {
-    width: "10%",
-    height: "10%"
+    width: "100%",
+    height: "100%"
   },
   name: {
     fontSize: 25,

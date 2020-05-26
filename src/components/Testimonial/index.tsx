@@ -11,11 +11,13 @@ interface Props {
 export default function Testimonial({ content }: Props) {
   return (
     <div style={style.container}>
-      <img
-        style={style.logo}
-        src={content.name.includes("Ceri") ? Ceri : Friede}
-        alt=""
-      />
+      <div style={style.imageWrap}>
+        <img
+          style={style.logo}
+          src={content.name.includes("Ceri") ? Ceri : Friede}
+          alt=""
+        />
+      </div>
       <p style={style.textFeedback}>
         {content.feedback ? content.feedback : "Feedback"}
       </p>
