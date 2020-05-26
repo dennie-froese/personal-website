@@ -5,7 +5,7 @@ import { primaryTextColor } from "../../constants/styles";
 interface Props {
   children?: ReactNode;
   primaryTextColorBool?: boolean;
-  fontSize: number;
+  fontSize?: number;
 }
 
 export default function HeadingBold({
