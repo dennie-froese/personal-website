@@ -15,6 +15,10 @@ const style = {
     color: secondaryTextColor,
     textAlign: "center"
   },
+  logo: {
+    width: "10%",
+    height: "10%"
+  },
   name: {
     fontSize: 25,
     fontWeight: "bold",

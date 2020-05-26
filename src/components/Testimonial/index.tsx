@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./style";
 import { TestimonialType } from "../../sections/Testimonials/content";
+import Ceri from "../../images/ceri.jpeg";
+import Friede from "../../images/friede.jpg";
 
 interface Props {
   content: TestimonialType;
@@ -9,7 +11,11 @@ interface Props {
 export default function Testimonial({ content }: Props) {
   return (
     <div style={style.container}>
-      <p>{content.image ? content.image : "Image"}</p>
+      <img
+        style={style.logo}
+        src={content.name.includes("Ceri") ? Ceri : Friede}
+        alt=""
+      />
       <p style={style.textFeedback}>
         {content.feedback ? content.feedback : "Feedback"}
       </p>
