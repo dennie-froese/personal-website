@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd8eb262.chunk.css",
+    "main.js": "/static/js/main.ffdaab8e.chunk.js",
+    "main.js.map": "/static/js/main.ffdaab8e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9089ee33.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9089ee33.js.map",
+    "static/js/2.e2255fff.chunk.js": "/static/js/2.e2255fff.chunk.js",
+    "static/js/2.e2255fff.chunk.js.map": "/static/js/2.e2255fff.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f6a42cb7e12d25cc754e42b7652d971f.js": "/precache-manifest.f6a42cb7e12d25cc754e42b7652d971f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.dd8eb262.chunk.css.map": "/static/css/main.dd8eb262.chunk.css.map",
+    "static/js/2.e2255fff.chunk.js.LICENSE.txt": "/static/js/2.e2255fff.chunk.js.LICENSE.txt",
+    "static/media/Avatar-nobackground.png": "/static/media/Avatar-nobackground.a293bd25.png",
+    "static/media/johnson.png": "/static/media/johnson.5cd24e35.png",
+    "static/media/porsche.svg": "/static/media/porsche.c67f50c5.svg",
+    "static/media/santander.svg": "/static/media/santander.7f189485.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9089ee33.js",
+    "static/js/2.e2255fff.chunk.js",
+    "static/css/main.dd8eb262.chunk.css",
+    "static/js/main.ffdaab8e.chunk.js"
+  ]
+}
