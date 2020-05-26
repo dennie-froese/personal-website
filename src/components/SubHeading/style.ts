@@ -1,8 +1,8 @@
-import { secondaryTextColor } from "../../constants/styles";
+import { secondaryTextColor, fontStyle } from "../../constants/styles";
 
 const style = {
   text: {
-    fontFamily: "Open Sans",
+    fontFamily: fontStyle,
     color: secondaryTextColor,
     textAlign: "center"
   }
