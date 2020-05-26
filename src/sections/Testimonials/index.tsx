@@ -14,7 +14,7 @@ export default function Testimonials() {
       <div style={style.subContainer}>
         <CarouselProvider
           naturalSlideWidth={600}
-          naturalSlideHeight={350}
+          naturalSlideHeight={500}
           totalSlides={2}
         >
           <Slider>
