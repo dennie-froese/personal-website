@@ -14,7 +14,7 @@ export default function Column({ content }: Props) {
       <HeadingBold fontSize={30}>
         {content.title ? content.title : ""}
       </HeadingBold>
-      <TextBody fontSize={20}>
+      <TextBody fontSize={18}>
         {content.subtitle ? content.subtitle : ""}
       </TextBody>
 
@@ -22,13 +22,13 @@ export default function Column({ content }: Props) {
         {content.tools.title ? content.tools.title : ""}
       </p>
       {content.tools.skills.map((skill, i) => (
-        <TextBody fontSize={22}>{skill}</TextBody>
+        <TextBody fontSize={20}>{skill}</TextBody>
       ))}
       <p style={style.subheader}>
         {content.skills.title ? content.skills.title : ""}
       </p>
       {content.skills.skills.map((skill, i) => (
-        <TextBody fontSize={22}>{skill}</TextBody>
+        <TextBody fontSize={20}>{skill}</TextBody>
       ))}
     </div>
   );

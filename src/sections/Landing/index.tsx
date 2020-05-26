@@ -14,7 +14,7 @@ export default function Landing() {
         <Button />
       </div>
       <div style={style.container}>
-        <HeadinBold>Front-end developer and designer</HeadinBold>
+        <HeadinBold>Front-end developer & designer</HeadinBold>
         <div style={style.subContainer}>
           <SubHeading>I like to design and develop user interfaces!</SubHeading>
           <img style={style.avatar} src={Avatar} alt="" />

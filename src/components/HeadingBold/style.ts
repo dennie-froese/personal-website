@@ -2,7 +2,7 @@ import { secondaryTextColor } from "../../constants/styles";
 
 const style = {
   text: {
-    fontFamily: "Roboto Slab",
+    fontFamily: "Open Sans",
     color: secondaryTextColor,
     fontWeight: "bold",
     textAlign: "center"

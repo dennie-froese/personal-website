@@ -11,7 +11,7 @@ interface Props {
 export default function TextBody({
   children,
   primaryTextColorBool = false,
-  fontSize = 25
+  fontSize = 20
 }: Props) {
   return (
     <p

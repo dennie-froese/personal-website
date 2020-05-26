@@ -17,19 +17,6 @@ export type ColumnArray = {
 export const content: ColumnArray = {
   columns: [
     {
-      title: "Designer",
-      subtitle:
-        "I love to design clean and thoughtful user interfaces, with contents structured in a simple and user-friendly way.",
-      skills: {
-        title: "Things I like to design:",
-        skills: ["UI, Web, Mobile, Apps, Logos", ""]
-      },
-      tools: {
-        title: "Design tools:",
-        skills: ["Sketch", "Invision", "Zeplin"]
-      }
-    },
-    {
       title: "Front-end Developer",
       subtitle:
         "I enjoy developing things from scratch and bringing ideas to life in mobile and web apps.",
@@ -43,6 +30,19 @@ export const content: ColumnArray = {
       tools: {
         title: "Dev tools:",
         skills: ["VSCode", "Github", "Command line / Z shell"]
+      }
+    },s
+    {
+      title: "Designer",
+      subtitle:
+        "I love to design clean and thoughtful user interfaces, with contents structured in a simple and user-friendly way.",
+      skills: {
+        title: "Things I like to design:",
+        skills: ["UI, Web, Mobile, Apps, Logos", ""]
+      },
+      tools: {
+        title: "Design tools:",
+        skills: ["Sketch", "Invision", "Zeplin"]
       }
     }
   ]
