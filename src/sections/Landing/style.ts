@@ -17,8 +17,7 @@ const style = {
     padding: "2%"
   },
   logo: {
-    width: "10%",
-    height: "10%"
+    width: "100px"
   },
   subContainer: {
     width: "50%",
@@ -27,8 +26,8 @@ const style = {
     alignItems: "center"
   },
   avatar: {
-    width: "20%",
-    height: "20%"
+    width: "100px",
+    padding: 20
   }
 } as { [key: string]: React.CSSProperties };
 

@@ -9,14 +9,13 @@ const style = {
     borderColor: "lightgrey",
     paddingTop: "10%",
     paddingBottom: "10%",
-    paddingLeft: "20%",
-    paddingRight: "20%"
+    paddingLeft: "10%",
+    paddingRight: "10%"
   },
   subContainer: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: "5%",
     border: "2px solid",
     borderColor: "lightgrey",
     borderRadius: "10px"
