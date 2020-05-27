@@ -3,6 +3,8 @@ import style from "./style";
 import { ColumnContent } from "../../sections/Skills/content";
 import HeadingBold from "../HeadingBold";
 import TextBody from "../TextBody";
+import Dev from "../../images/Dev-logo.png";
+import Design from "../../images/Design-logo.png";
 
 interface Props {
   content: ColumnContent;
@@ -11,6 +13,11 @@ interface Props {
 export default function Column({ content }: Props) {
   return (
     <div style={style.column}>
+      <img
+        style={style.logo}
+        src={content.title.includes("Dev") ? Dev : Design}
+        alt=""
+      />
       <div style={style.section}>
         <HeadingBold fontSize={30}>
           {content.title ? content.title : ""}

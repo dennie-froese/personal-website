@@ -16,6 +16,9 @@ const style = {
   },
   section: {
     paddingBottom: "25px"
+  },
+  logo: {
+    width: "100px"
   }
 } as { [key: string]: React.CSSProperties };
 
