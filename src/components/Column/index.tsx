@@ -11,25 +11,34 @@ interface Props {
 export default function Column({ content }: Props) {
   return (
     <div style={style.column}>
-      <HeadingBold fontSize={30}>
-        {content.title ? content.title : ""}
-      </HeadingBold>
-      <TextBody fontSize={18}>
-        {content.subtitle ? content.subtitle : ""}
-      </TextBody>
-
-      <p style={style.subheader}>
-        {content.tools.title ? content.tools.title : ""}
-      </p>
-      {content.tools.skills.map((skill, i) => (
-        <TextBody fontSize={20}>{skill}</TextBody>
-      ))}
-      <p style={style.subheader}>
-        {content.skills.title ? content.skills.title : ""}
-      </p>
-      {content.skills.skills.map((skill, i) => (
-        <TextBody fontSize={20}>{skill}</TextBody>
-      ))}
+      <div style={style.section}>
+        <HeadingBold fontSize={30}>
+          {content.title ? content.title : ""}
+        </HeadingBold>
+        <TextBody fontSize={18}>
+          {content.subtitle ? content.subtitle : ""}
+        </TextBody>
+      </div>
+      <div style={style.section}>
+        <p style={style.subheader}>
+          {content.tools.title ? content.tools.title : ""}
+        </p>
+        {content.tools.skills.map((skill, i) => (
+          <TextBody fontSize={20} margin={10}>
+            {skill}
+          </TextBody>
+        ))}
+      </div>
+      <div style={style.section}>
+        <p style={style.subheader}>
+          {content.skills.title ? content.skills.title : ""}
+        </p>
+        {content.skills.skills.map((skill, i) => (
+          <TextBody fontSize={20} margin={10}>
+            {skill}
+          </TextBody>
+        ))}
+      </div>
     </div>
   );
 }

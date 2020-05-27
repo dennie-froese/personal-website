@@ -5,13 +5,17 @@ const style = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    width: "45%"
+    width: "50%"
   },
   subheader: {
     fontSize: 22,
     color: primaryColor,
     fontStyle: "italic",
-    textAlign: "center"
+    textAlign: "center",
+    margin: "20px"
+  },
+  section: {
+    paddingBottom: "25px"
   }
 } as { [key: string]: React.CSSProperties };
 
