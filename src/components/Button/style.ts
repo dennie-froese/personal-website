@@ -9,7 +9,8 @@ const style = {
     fontFamily: fontStyle
   },
   text: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    margin: "10px"
   }
 } as { [key: string]: React.CSSProperties };
 

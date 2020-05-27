@@ -4,7 +4,8 @@ const style = {
   text: {
     fontFamily: fontStyle,
     color: secondaryTextColor,
-    textAlign: "center"
+    textAlign: "center",
+    margin: "15px"
   }
 } as { [key: string]: React.CSSProperties };
 
