@@ -23,6 +23,9 @@ const style = {
   logo: {
     width: "100%",
     height: "100%"
+  },
+  bottom: {
+    paddingTop: 30
   }
 } as { [key: string]: React.CSSProperties };
 

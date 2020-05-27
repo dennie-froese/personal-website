@@ -12,7 +12,7 @@ export default function Testimonials() {
   return (
     <div style={style.container}>
       <HeadingBold fontSize={30}>Testimonials</HeadingBold>
-      <TextBody fontSize={18}>
+      <TextBody fontSize={18} margin={5}>
         People I worked with in the past have said some nice things:
       </TextBody>
       <div style={style.subContainer}>

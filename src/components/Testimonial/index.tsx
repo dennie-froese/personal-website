@@ -21,10 +21,14 @@ export default function Testimonial({ content }: Props) {
         />
       </div>
       <TextBody>{content.feedback ? content.feedback : "Feedback"}</TextBody>
-      <HeadingBold fontSize={25}>
-        {content.name ? content.name : "Name"}
-      </HeadingBold>
-      <TextBody>{content.role ? content.role : "Role"}</TextBody>
+      <div style={style.bottom}>
+        <HeadingBold fontSize={25} margin={0}>
+          {content.name ? content.name : "Name"}
+        </HeadingBold>
+        <TextBody margin={5} fontSize={15}>
+          {content.role ? content.role : "Role"}
+        </TextBody>
+      </div>
     </div>
   );
 }
