@@ -26,7 +26,7 @@ const style = {
     alignItems: "center"
   },
   avatar: {
-    width: "100px",
+    width: "200px",
     padding: 20
   }
 } as { [key: string]: React.CSSProperties };

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style";
 import PersonalLogo from "../../images/PersonalLogo.png";
 import Button from "../../components/Button";
-import Avatar from "../../images/Avatar-nobackground.png";
+import Avatar from "../../images/Avatar-background.jpg";
 import HeadinBold from "../../components/HeadingBold";
 import SubHeading from "../../components/SubHeading";
 
