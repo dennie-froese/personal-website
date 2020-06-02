@@ -15,7 +15,7 @@ export default function Column({ content }: Props) {
     <div style={style.column}>
       <img
         style={style.logo}
-        src={content.title.includes("Dev") ? Dev : Design}
+        src={content.title.includes("Engineer") ? Dev : Design}
         alt=""
       />
       <div style={style.section}>
