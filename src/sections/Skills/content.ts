@@ -17,7 +17,7 @@ export type ColumnArray = {
 export const content: ColumnArray = {
   columns: [
     {
-      title: "Front-end Developer",
+      title: "Front-end Engineer",
       subtitle:
         "I enjoy developing things from scratch and bringing ideas to life in mobile and web apps.",
       skills: {
