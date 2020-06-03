@@ -1,4 +1,4 @@
-import { secondaryColor, secondaryTextColor } from "../../constants/styles";
+import { secondaryColor } from "../../constants/styles";
 
 const style = {
   container: {
