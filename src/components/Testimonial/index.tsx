@@ -5,7 +5,6 @@ import Ceri from "../../images/ceri.jpeg";
 import Friede from "../../images/friede.jpg";
 import TextBody from "../TextBody";
 import HeadingBold from "../HeadingBold";
-import useBreakpoint from "../../hooks/useBreakpoint";
 
 interface Props {
   content: TestimonialType;
@@ -28,9 +27,9 @@ export default function Testimonial({ content }: Props) {
     return start * (1 - t) + end * t;
   }
 
-  const fontSize = Math.floor(lerp(8, 15, width / 1600));
-
-  console.log(fontSize);
+  const fontSizeBody = Math.floor(lerp(3, 20, width / 1600));
+  const fontSizeHeader = Math.floor(lerp(10, 25, width / 1600));
+  const fontSizeSubHeader = Math.floor(lerp(8, 15, width / 1600));
 
   return (
     <div style={style.container}>
@@ -41,14 +40,14 @@ export default function Testimonial({ content }: Props) {
           alt=""
         />
       </div>
-      <TextBody fontSize={useBreakpoint() ? 20 : 6}>
+      <TextBody margin={fontSizeBody} fontSize={fontSizeBody}>
         {content.feedback ? content.feedback : "Feedback"}
       </TextBody>
       <div style={style.bottom}>
-        <HeadingBold fontSize={useBreakpoint() ? 25 : 15} margin={0}>
+        <HeadingBold fontSize={fontSizeHeader} margin={0}>
           {content.name ? content.name : "Name"}
         </HeadingBold>
-        <TextBody margin={5} fontSize={fontSize}>
+        <TextBody margin={5} fontSize={fontSizeSubHeader}>
           {content.role ? content.role : "Role"}
         </TextBody>
       </div>
