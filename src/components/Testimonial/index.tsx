@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./style";
 import { TestimonialType } from "../../sections/Testimonials/content";
 import Ceri from "../../images/ceri.jpeg";
@@ -12,9 +12,25 @@ interface Props {
 }
 
 export default function Testimonial({ content }: Props) {
-  // const divRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(window.innerWidth);
 
-  // useEffect;
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  function lerp(start: number, end: number, t: number) {
+    return start * (1 - t) + end * t;
+  }
+
+  const fontSize = Math.floor(lerp(8, 15, width / 1600));
+
+  console.log(fontSize);
 
   return (
     <div style={style.container}>
@@ -32,7 +48,7 @@ export default function Testimonial({ content }: Props) {
         <HeadingBold fontSize={useBreakpoint() ? 25 : 15} margin={0}>
           {content.name ? content.name : "Name"}
         </HeadingBold>
-        <TextBody margin={5} fontSize={useBreakpoint() ? 15 : 9}>
+        <TextBody margin={5} fontSize={fontSize}>
           {content.role ? content.role : "Role"}
         </TextBody>
       </div>
