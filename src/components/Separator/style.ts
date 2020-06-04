@@ -1,6 +1,6 @@
 const style = {
   separator: {
-    borderLeft: "1px solid lightgrey"
+    borderLeft: "1.5px solid lightgrey"
   }
 } as { [key: string]: React.CSSProperties };
 
