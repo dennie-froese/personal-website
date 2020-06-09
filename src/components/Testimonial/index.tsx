@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function Testimonial({ content }: Props) {
-  const fontSizeBody = useLerp(3, 20);
+  const fontSizeBody = useLerp(4, 16);
   const fontSizeHeader = useLerp(10, 25);
   const fontSizeSubHeader = useLerp(8, 15);
 

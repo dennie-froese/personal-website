@@ -4,7 +4,7 @@ const style = {
   text: {
     fontFamily: fontStyle,
     color: secondaryTextColor,
-    fontWeight: "bold",
+    fontWeight: "bolder",
     textAlign: "center"
   }
 } as { [key: string]: React.CSSProperties };
