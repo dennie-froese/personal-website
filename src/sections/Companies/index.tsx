@@ -5,11 +5,12 @@ import santander from "../../images/santander.svg";
 import johnson from "../../images/johnson.png";
 import loreal from "../../images/loreal.png";
 import HeadingBold from "../../components/HeadingBold";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 export default function Companies() {
   return (
     <div style={style.container}>
-      <HeadingBold fontSize={35}>
+      <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
         I'm proud to have worked for some amazing companies and brands:
       </HeadingBold>
       <div style={style.subContainer}>

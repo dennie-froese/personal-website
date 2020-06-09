@@ -5,6 +5,7 @@ import Button from "../../components/Button";
 import Avatar from "../../images/Avatar-background.jpg";
 import HeadinBold from "../../components/HeadingBold";
 import SubHeading from "../../components/SubHeading";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 export default function Landing() {
   return (
@@ -14,7 +15,9 @@ export default function Landing() {
         <Button />
       </div>
       <div style={style.container}>
-        <HeadinBold>Front-end Engineer & Designer</HeadinBold>
+        <HeadinBold fontSize={useBreakpoint() ? 60 : 40}>
+          Front-end Engineer & Designer
+        </HeadinBold>
         <div style={style.subContainer}>
           <SubHeading>I love to design and develop user interfaces!</SubHeading>
           <img style={style.avatar} src={Avatar} alt="" />

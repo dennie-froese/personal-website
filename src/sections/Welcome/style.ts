@@ -10,7 +10,7 @@ const style = {
     paddingBottom: "10%"
   },
   subContainer: {
-    width: "60%"
+    width: "90%"
   }
 } as { [key: string]: React.CSSProperties };
 

@@ -20,7 +20,7 @@ const style = {
     width: "100px"
   },
   subContainer: {
-    width: "50%",
+    width: "90%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
