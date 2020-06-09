@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { content } from "./content";
 import style from "./style";
 import "./index.css";
@@ -6,29 +6,14 @@ import "./index.css";
 import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+import useLerp from "../../hooks/useLerp";
 import Testimonial from "../../components/Testimonial";
 import HeadingBold from "../../components/HeadingBold";
 import TextBody from "../../components/TextBody";
 
 export default function Testimonials() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  function lerp(start: number, end: number, t: number) {
-    return start * (1 - t) + end * t;
-  }
-
-  const heightSlide = lerp(1400, 450, width / 1600);
-  const widthSlide = lerp(1000, 550, width / 1600);
+  const heightSlide = useLerp(1400, 450);
+  const widthSlide = useLerp(1000, 550);
 
   return (
     <div style={style.container}>
