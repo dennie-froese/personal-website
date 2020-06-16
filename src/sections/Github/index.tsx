@@ -11,7 +11,7 @@ export default function GitHub() {
   const [result, setResult] = useState();
 
   useEffect(() => {
-    fetch("https://api.github.com")
+    fetch("https://api.github.com/users/dennie-froese")
       .then(res => res.json())
       .then(result => {
         setResult(result);
@@ -23,6 +23,7 @@ export default function GitHub() {
       <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
         Recent GitHub Activity:
       </HeadingBold>
+      {result ? <div>{result.login}</div> : null}
       <div style={style.subContainer}>
         <img style={style.logo} alt="" src={santander} />
         <img style={style.logo} alt="" src={porsche} />
