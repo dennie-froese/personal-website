@@ -4,15 +4,9 @@ import HeadingBold from "../../components/HeadingBold";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 export default function GitHub() {
-  const [result, setResult] = useState();
   const [events, setEvents] = useState();
 
   useEffect(() => {
-    fetch("https://api.github.com/users/dennie-froese")
-      .then(res => res.json())
-      .then(result => {
-        setResult(result);
-      });
     fetch("https://api.github.com/users/dennie-froese/events")
       .then(res => res.json())
       .then(result => {
@@ -25,7 +19,6 @@ export default function GitHub() {
       <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
         Recent GitHub Activity:
       </HeadingBold>
-      {result ? <div>{result.login}</div> : null}
       {events
         ? events.map((event: any) => (
             <div
