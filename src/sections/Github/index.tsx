@@ -28,10 +28,20 @@ export default function GitHub() {
       {result ? <div>{result.login}</div> : null}
       {events
         ? events.map((event: any) => (
-            <>
+            <div
+              style={{
+                flexDirection: "row",
+                display: "flex",
+                justifyContent: "space-between"
+              }}
+            >
               <div>{event.id}</div>
               <div>{event.type}</div>
-            </>
+              <div>{event.repo.name}</div>
+              {event.payload.commits?.map((commit: any) => (
+                <div>{commit.message}</div>
+              ))}
+            </div>
           ))
         : null}
     </div>
