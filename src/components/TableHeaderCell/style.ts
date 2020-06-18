@@ -4,10 +4,10 @@ const style = {
   text: {
     fontFamily: fontStyle,
     color: secondaryTextColor,
-    fontWeight: "bolder",
+    fontWeight: "bold",
     textAlign: "center",
     fontSize: 20,
-    margin: 25
+    padding: 10
   }
 } as { [key: string]: React.CSSProperties };
 
