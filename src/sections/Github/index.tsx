@@ -20,22 +20,28 @@ export default function GitHub() {
         Recent GitHub Activity:
       </HeadingBold>
       {events
-        ? events.map((event: any) => (
-            <div
-              style={{
-                flexDirection: "row",
-                display: "flex",
-                justifyContent: "space-between"
-              }}
-            >
-              <div>{event.id}</div>
-              <div>{event.type}</div>
-              <div>{event.repo.name.split("/")[1]}</div>
-              {event.payload.commits?.map((commit: any) => (
-                <div>{commit.message}</div>
-              ))}
-            </div>
-          ))
+        ? events.map((event: any) => {
+            const date = new Date(event.created_at).toLocaleDateString();
+            // const month =;
+            // const year = ;
+            return (
+              <div
+                style={{
+                  flexDirection: "row",
+                  display: "flex",
+                  justifyContent: "space-between"
+                }}
+              >
+                <div>{event.id}</div>
+                <div style={{ fontWeight: "bold" }}>{date}</div>
+                <div>{event.type}</div>
+                <div>{event.repo.name.split("/")[1]}</div>
+                {event.payload.commits?.map((commit: any) => (
+                  <div>{commit.message}</div>
+                ))}
+              </div>
+            );
+          })
         : null}
     </div>
   );
