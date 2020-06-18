@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./style";
 import HeadingBold from "../../components/HeadingBold";
 import useBreakpoint from "../../hooks/useBreakpoint";
+import TableHeader from "../../components/TableHeader";
 
 export default function GitHub() {
   const [events, setEvents] = useState();
@@ -19,30 +20,36 @@ export default function GitHub() {
       <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
         Recent GitHub Activity:
       </HeadingBold>
-      {events
-        ? events.map((event: any) => {
-            const date = new Date(event.created_at).toLocaleDateString();
-            // const month =;
-            // const year = ;
-            return (
-              <div
-                style={{
-                  flexDirection: "row",
-                  display: "flex",
-                  justifyContent: "space-between"
-                }}
-              >
-                <div>{event.id}</div>
-                <div style={{ fontWeight: "bold" }}>{date}</div>
-                <div>{event.type}</div>
-                <div>{event.repo.name.split("/")[1]}</div>
-                {event.payload.commits?.map((commit: any) => (
-                  <div>{commit.message}</div>
-                ))}
-              </div>
-            );
-          })
-        : null}
+      <table>
+        <TableHeader />
+        {events
+          ? events.map((event: any) => {
+              const date = new Date(event.created_at).toLocaleDateString();
+              return (
+                <div
+                  style={{
+                    flexDirection: "row",
+                    display: "flex",
+                    justifyContent: "space-between"
+                  }}
+                >
+                  <div style={{ fontWeight: "bold", padding: 10 }}>{date}</div>
+                  <div style={{ fontWeight: "bold", padding: 10 }}>
+                    {event.type}
+                  </div>
+                  <div style={{ fontWeight: "bold", padding: 10 }}>
+                    {event.repo.name.split("/")[1]}
+                  </div>
+                  {event.payload.commits?.map((commit: any) => (
+                    <div style={{ fontWeight: "bold", padding: 10 }}>
+                      {commit.message}
+                    </div>
+                  ))}
+                </div>
+              );
+            })
+          : null}
+      </table>
     </div>
   );
 }
