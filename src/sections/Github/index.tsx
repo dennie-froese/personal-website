@@ -30,7 +30,7 @@ export default function GitHub() {
             >
               <div>{event.id}</div>
               <div>{event.type}</div>
-              <div>{event.repo.name}</div>
+              <div>{event.repo.name.split("/")[1]}</div>
               {event.payload.commits?.map((commit: any) => (
                 <div>{commit.message}</div>
               ))}
