@@ -3,6 +3,8 @@ import style from "./style";
 import HeadingBold from "../../components/HeadingBold";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import TableHeader from "../../components/TableHeader";
+import TableRow from "../../components/TableRow";
+import TableRowCell from "../../components/TableRowCell";
 
 export default function GitHub() {
   const [events, setEvents] = useState();
@@ -26,26 +28,14 @@ export default function GitHub() {
           ? events.map((event: any) => {
               const date = new Date(event.created_at).toLocaleDateString();
               return (
-                <div
-                  style={{
-                    flexDirection: "row",
-                    display: "flex",
-                    justifyContent: "space-between"
-                  }}
-                >
-                  <div style={{ fontWeight: "bold", padding: 10 }}>{date}</div>
-                  <div style={{ fontWeight: "bold", padding: 10 }}>
-                    {event.type}
-                  </div>
-                  <div style={{ fontWeight: "bold", padding: 10 }}>
-                    {event.repo.name.split("/")[1]}
-                  </div>
+                <TableRow>
+                  <TableRowCell>{date}</TableRowCell>
+                  <TableRowCell>{event.type}</TableRowCell>
+                  <TableRowCell>{event.repo.name.split("/")[1]}</TableRowCell>
                   {event.payload.commits?.map((commit: any) => (
-                    <div style={{ fontWeight: "bold", padding: 10 }}>
-                      {commit.message}
-                    </div>
+                    <TableRowCell>{commit.message}</TableRowCell>
                   ))}
-                </div>
+                </TableRow>
               );
             })
           : null}
