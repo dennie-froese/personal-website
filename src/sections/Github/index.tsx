@@ -20,26 +20,38 @@ export default function GitHub() {
   return (
     <div style={style.container}>
       <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
-        Recent GitHub Activity:
+        The latest from my GitHub:
       </HeadingBold>
-      <table>
+      <div style={style.subContainer}>
         <TableHeader />
-        {events
-          ? events.map((event: any) => {
-              const date = new Date(event.created_at).toLocaleDateString();
-              return (
-                <TableRow>
-                  <TableRowCell>{date}</TableRowCell>
-                  <TableRowCell>{event.type}</TableRowCell>
-                  <TableRowCell>{event.repo.name.split("/")[1]}</TableRowCell>
-                  {event.payload.commits?.map((commit: any) => (
-                    <TableRowCell>{commit.message}</TableRowCell>
-                  ))}
-                </TableRow>
-              );
-            })
-          : null}
-      </table>
+        <div style={style.subContainerTable}>
+          <table style={style.table}>
+            <tbody style={style.tableBody}>
+              {events
+                ? events.map((event: any) => {
+                    const date = new Date(
+                      event.created_at
+                    ).toLocaleDateString();
+                    return (
+                      <TableRow>
+                        <TableRowCell>{date}</TableRowCell>
+                        <TableRowCell>{event.type}</TableRowCell>
+                        <TableRowCell>
+                          {event.repo.name.split("/")[1]}
+                        </TableRowCell>
+                        <TableRowCell>
+                          {event.payload.commits?.map((commit: any) => (
+                            <div>{commit.message}</div>
+                          ))}
+                        </TableRowCell>
+                      </TableRow>
+                    );
+                  })
+                : null}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

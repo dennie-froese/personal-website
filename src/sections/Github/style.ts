@@ -13,16 +13,23 @@ const style = {
   },
   subContainer: {
     display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-    width: "70%",
-    paddingTop: "5%"
+    flexDirection: "column",
+    maxWidth: "70%"
   },
-  logo: {
-    width: "25%",
-    height: "25%",
-    padding: "3%"
+  subContainerTable: {
+    display: "flex",
+    flexDirection: "column",
+    maxHeight: 1000,
+    overflowY: "auto"
+  },
+  table: {
+    display: "flex",
+    flex: 1
+  },
+  tableBody: {
+    display: "flex",
+    flexDirection: "column",
+    flex: 1
   }
 } as { [key: string]: React.CSSProperties };
 
