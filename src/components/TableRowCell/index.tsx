@@ -6,5 +6,5 @@ interface Props {
 }
 
 export default function TableRowCell({ children }: Props) {
-  return <tr style={style.text}>{children}</tr>;
+  return <td style={style.text}>{children}</td>;
 }
