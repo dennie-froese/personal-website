@@ -1,10 +1,11 @@
-import { secondaryTextColor, fontStyle } from "../../constants/styles";
-
 const style = {
   row: {
     display: "flex",
+    flexDirection: "row",
+    flex: 1,
     width: "100%",
-    flexDirection: "row"
+    alignItems: "center",
+    justifyContent: "center"
   }
 } as { [key: string]: React.CSSProperties };
 
