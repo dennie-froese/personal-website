@@ -4,6 +4,7 @@ import HeadingBold from "../../components/HeadingBold";
 import useBreakpoint from "../../hooks/useBreakpoint";
 import TableHeader from "../../components/TableHeader";
 import TableRow from "../../components/TableRow";
+import GitPost from "../../components/GitPost";
 import TableRowCell from "../../components/TableRowCell";
 
 export default function GitHub() {
@@ -24,33 +25,40 @@ export default function GitHub() {
       </HeadingBold>
       <div style={style.subContainer}>
         <TableHeader />
-        <div style={style.subContainerTable}>
+        {/* <div style={style.subContainerTable}>
           <table style={style.table}>
-            <tbody style={style.tableBody}>
-              {events
-                ? events.map((event: any) => {
-                    const date = new Date(
-                      event.created_at
-                    ).toLocaleDateString();
-                    return (
-                      <TableRow>
-                        <TableRowCell>{date}</TableRowCell>
-                        <TableRowCell>{event.type}</TableRowCell>
-                        <TableRowCell>
-                          {event.repo.name.split("/")[1]}
-                        </TableRowCell>
-                        <TableRowCell>
-                          {event.payload.commits?.map((commit: any) => (
-                            <div>{commit.message}</div>
-                          ))}
-                        </TableRowCell>
-                      </TableRow>
-                    );
-                  })
-                : null}
-            </tbody>
+        <tbody style={style.tableBody}> */}
+        {events
+          ? events.map((event: any) => {
+              const date = new Date(event.created_at).toLocaleDateString();
+              let commits = event.payload.commits?.map(
+                (commit: any) => commit.message
+              );
+              return (
+                <GitPost
+                  date={date}
+                  event={event.type}
+                  repository={event.repo.name.split("/")[1]}
+                  commits={commits}
+                />
+                // <TableRow>
+                //   <TableRowCell>{date}</TableRowCell>
+                //   <TableRowCell>{event.type}</TableRowCell>
+                //   <TableRowCell>
+                //     {event.repo.name.split("/")[1]}
+                //   </TableRowCell>
+                //   <TableRowCell>
+                //     {event.payload.commits?.map((commit: any) => (
+                //       <div>{commit.message}</div>
+                //     ))}
+                //   </TableRowCell>
+                // </TableRow>
+              );
+            })
+          : null}
+        {/* </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
     </div>
   );
