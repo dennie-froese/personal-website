@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./style";
 import TextBody from "../TextBody";
+import Link from "../Link";
 
 interface Props {
   date: string;
@@ -19,7 +20,7 @@ export default function GitPost({ date, event, repository, commits }: Props) {
           <TextBody margin={10}>{event}</TextBody>
         </div>
         {commits?.map((commit: string) => {
-          return <div>{commit}</div>;
+          return <Link>{commit}</Link>;
         })}
       </div>
     </div>
