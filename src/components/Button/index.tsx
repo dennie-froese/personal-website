@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./style";
-import "./index.css";
 
 export default function Button() {
+  const [colorBackground, setColorBackground] = useState("");
+  const [colorText, setColorText] = useState("black");
+  function mouseOver() {
+    setColorBackground("black");
+    setColorText("white");
+  }
+  function mouseOut() {
+    setColorBackground("");
+    setColorText("black");
+  }
   return (
     <a
-      style={style.button}
+      onMouseOver={mouseOver}
+      onMouseOut={mouseOut}
+      style={{
+        ...style.button,
+        backgroundColor: colorBackground
+      }}
       href="mailto:denfroese@gmail.com?subject=Hi Dennie!"
     >
-      <p style={style.text}>Say hello</p>
+      <p style={{ ...style.text, color: colorText }}>Say hello</p>
     </a>
   );
 }

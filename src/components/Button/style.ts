@@ -6,7 +6,8 @@ const style = {
     borderRadius: 30,
     paddingLeft: "0.8%",
     paddingRight: "0.8%",
-    fontFamily: fontStyle
+    fontFamily: fontStyle,
+    textDecorationLine: "none"
   },
   text: {
     fontWeight: "bold",
