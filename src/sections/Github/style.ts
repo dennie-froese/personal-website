@@ -14,7 +14,7 @@ const style = {
   subContainer: {
     display: "flex",
     flexDirection: "column",
-    maxWidth: "70%",
+    maxWidth: "80%",
     maxHeight: 700,
     overflowY: "auto",
     backgroundColor: "lightgrey",

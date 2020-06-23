@@ -9,6 +9,10 @@ interface Props {
   margin?: number;
 }
 
-export default function TextBody({ children }: Props) {
-  return <p style={style.link}>{children}</p>;
+export default function Link({ children, fontSize = 20, margin = 10 }: Props) {
+  return (
+    <p style={{ ...style.link, fontSize: fontSize, margin: margin }}>
+      {children}
+    </p>
+  );
 }
