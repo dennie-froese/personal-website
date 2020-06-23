@@ -1,11 +1,9 @@
-import { secondaryTextColor, fontStyle } from "../../constants/styles";
+import { fontStyle } from "../../constants/styles";
 
 const style = {
   link: {
     fontFamily: fontStyle,
-    color: "blue",
-    textAlign: "left",
-    textDecorationLine: "underline"
+    textAlign: "left"
   }
 } as { [key: string]: React.CSSProperties };
 
