@@ -16,3 +16,17 @@ code {
 p {
   margin: 0;
 }
+
+a:link,
+a:visited {
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: black;
+  text-decoration: underline;
+}
