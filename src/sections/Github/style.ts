@@ -15,8 +15,10 @@ const style = {
     display: "flex",
     flexDirection: "column",
     maxWidth: "70%",
-    maxHeight: 1000,
-    overflowY: "auto"
+    maxHeight: 700,
+    overflowY: "auto",
+    backgroundColor: "lightgrey",
+    borderRadius: 10
   }
 } as { [key: string]: React.CSSProperties };
 
