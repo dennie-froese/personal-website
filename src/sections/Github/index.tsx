@@ -24,15 +24,7 @@ export default function GitHub() {
         {events
           ? events.map((event: any) => {
               const date = new Date(event.created_at).toLocaleDateString();
-              let commits = event.payload.commits?.map((commit: any) => commit);
-              return (
-                <GitPost
-                  date={date}
-                  event={event.type}
-                  repository={event.repo.name.split("/")[1]}
-                  commits={commits}
-                />
-              );
+              return <GitPost date={date} event={event} />;
             })
           : null}
       </div>
