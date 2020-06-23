@@ -10,6 +10,7 @@ import useLerp from "../../hooks/useLerp";
 import Testimonial from "../../components/Testimonial";
 import HeadingBold from "../../components/HeadingBold";
 import TextBody from "../../components/TextBody";
+import useBreakpoint from "../../hooks/useBreakpoint";
 
 export default function Testimonials() {
   const heightSlide = useLerp(1400, 450);
@@ -17,7 +18,9 @@ export default function Testimonials() {
 
   return (
     <div style={style.container}>
-      <HeadingBold fontSize={30}>Testimonials</HeadingBold>
+      <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
+        Testimonials
+      </HeadingBold>
       <TextBody fontSize={18} margin={5}>
         People I worked with in the past have said some nice things:
       </TextBody>
