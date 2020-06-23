@@ -4,7 +4,6 @@ import PersonalLogo from "../../images/PersonalLogo.png";
 import gmail from "../../images/gmail.png";
 import Linkedin from "../../images/Linkedin.svg";
 import Github from "../../images/Github.png";
-import Button from "../../components/Button";
 import Avatar from "../../images/Avatar-background.jpg";
 import HeadinBold from "../../components/HeadingBold";
 import SubHeading from "../../components/SubHeading";
@@ -15,10 +14,10 @@ export default function Landing() {
     <>
       <div style={style.headerContainer}>
         <img style={style.logo} src={PersonalLogo} alt="" />
-        <div>
-          <img style={style.logo} src={gmail} alt="" />
-          <img style={style.logo} src={Linkedin} alt="" />
-          <img style={style.logo} src={Github} alt="" />
+        <div style={style.logosContainer}>
+          <img style={style.logos} src={Github} alt="" />
+          <img style={style.logoGmail} src={gmail} alt="" />
+          <img style={style.logos} src={Linkedin} alt="" />
         </div>
       </div>
       <div style={style.container}>
