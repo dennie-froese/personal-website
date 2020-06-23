@@ -7,12 +7,20 @@ interface Props {
   primaryTextColorBool?: boolean;
   fontSize?: number;
   margin?: number;
+  url?: string;
 }
 
-export default function Link({ children, fontSize = 20, margin = 10 }: Props) {
+export default function Link({
+  children,
+  fontSize = 20,
+  margin = 10,
+  url
+}: Props) {
   return (
-    <p style={{ ...style.link, fontSize: fontSize, margin: margin }}>
-      {children}
-    </p>
+    <a href={url}>
+      <p style={{ ...style.link, fontSize: fontSize, margin: margin }}>
+        {children}
+      </p>
+    </a>
   );
 }

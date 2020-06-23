@@ -8,7 +8,7 @@ interface Props {
   date: string;
   event: string;
   repository: string;
-  commits: Array<string>;
+  commits: any;
 }
 
 export default function GitPost({ date, event, repository, commits }: Props) {
@@ -29,8 +29,12 @@ export default function GitPost({ date, event, repository, commits }: Props) {
           </TextBody>
         </div>
         <div>
-          {commits?.map((commit: string) => {
-            return <Link fontSize={font}>{commit}</Link>;
+          {commits?.map((commit: any) => {
+            return (
+              <Link url={commit.url} fontSize={font}>
+                {commit.message}
+              </Link>
+            );
           })}
         </div>
       </div>

@@ -10,12 +10,12 @@ import GitHub from "./sections/Github";
 export default function App() {
   return (
     <div className="App" style={style.container}>
-      <GitHub />
       <Landing />
       <Welcome />
       <Skills />
       <Companies />
       <Testimonials />
+      <GitHub />
     </div>
   );
 }
