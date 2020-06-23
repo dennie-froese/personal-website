@@ -17,7 +17,7 @@ export default function GitPost({ date, event, repository, commits }: Props) {
         <div style={style.header}>
           <TextBody margin={10}>{date}</TextBody>
           <TextBody margin={10}>{repository}</TextBody>
-          <TextBody margin={10}>{event}</TextBody>
+          <TextBody margin={10}>{event.split("Event")[0]}</TextBody>
         </div>
         {commits?.map((commit: string) => {
           return <Link>{commit}</Link>;
