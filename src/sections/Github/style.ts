@@ -14,22 +14,9 @@ const style = {
   subContainer: {
     display: "flex",
     flexDirection: "column",
-    maxWidth: "70%"
-  },
-  subContainerTable: {
-    display: "flex",
-    flexDirection: "column",
+    maxWidth: "70%",
     maxHeight: 1000,
     overflowY: "auto"
-  },
-  table: {
-    display: "flex",
-    flex: 1
-  },
-  tableBody: {
-    display: "flex",
-    flexDirection: "column",
-    flex: 1
   }
 } as { [key: string]: React.CSSProperties };
 
