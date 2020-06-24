@@ -30,3 +30,30 @@ a:active {
   color: black;
   text-decoration: underline;
 }
+
+.menuButton:active {
+  transform: scale(1.2, 1.2);
+}
+
+.flyoutMenu.show {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(126, 126, 126);
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  right: 0;
+  transition: 1.8s ease;
+  z-index: 1000;
+  border-bottom: 2px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-color: black;
+}
+
+.flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
