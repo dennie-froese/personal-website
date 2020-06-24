@@ -55,7 +55,7 @@ export default function ContactLogos() {
   ) : (
     <div style={style.logosContainer}>
       {navOpened ? (
-        <div onClick={() => setNavOpened(!navOpened)} className={navClassName}>
+        <div className={navClassName}>
           <img
             onMouseOver={mouseOver}
             onMouseOut={mouseOut}
@@ -78,6 +78,13 @@ export default function ContactLogos() {
             onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
             style={style.logos}
             src={Linkedin}
+            alt=""
+          />
+          <img
+            className={"menuButton"}
+            onClick={() => setNavOpened(!navOpened)}
+            style={style.logos}
+            src={menu}
             alt=""
           />
         </div>
