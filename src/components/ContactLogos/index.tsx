@@ -52,5 +52,45 @@ export default function ContactLogos() {
         alt=""
       />
     </div>
-  ) : null;
+  ) : (
+    <div style={style.logosContainer}>
+      {navOpened ? (
+        <div onClick={() => setNavOpened(!navOpened)} className={navClassName}>
+          <img
+            onMouseOver={mouseOver}
+            onMouseOut={mouseOut}
+            onClick={() => fire("https://github.com/dennie-froese")}
+            style={style.logos}
+            src={Github}
+            alt=""
+          />
+          <img
+            onMouseOver={mouseOver}
+            onMouseOut={mouseOut}
+            onClick={mail}
+            style={style.logoGmail}
+            src={gmail}
+            alt=""
+          />
+          <img
+            onMouseOver={mouseOver}
+            onMouseOut={mouseOut}
+            onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
+            style={style.logos}
+            src={Linkedin}
+            alt=""
+          />
+        </div>
+      ) : null}
+      <div>
+        <img
+          className={"menuButton"}
+          onClick={() => setNavOpened(!navOpened)}
+          style={style.logos}
+          src={menu}
+          alt=""
+        />
+      </div>
+    </div>
+  );
 }
