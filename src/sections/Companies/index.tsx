@@ -10,7 +10,7 @@ import useBreakpoint from "../../hooks/useBreakpoint";
 export default function Companies() {
   return (
     <div style={style.container}>
-      <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
+      <HeadingBold fontSize={useBreakpoint() ? 40 : 25}>
         I'm proud to have worked for some amazing companies and brands:
       </HeadingBold>
       <div style={style.subContainer}>

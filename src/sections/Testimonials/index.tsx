@@ -18,7 +18,7 @@ export default function Testimonials() {
 
   return (
     <div style={style.container}>
-      <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
+      <HeadingBold fontSize={useBreakpoint() ? 40 : 25}>
         Testimonials
       </HeadingBold>
       <TextBody fontSize={18} margin={5}>

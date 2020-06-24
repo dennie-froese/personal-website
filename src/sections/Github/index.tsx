@@ -17,7 +17,7 @@ export default function GitHub() {
 
   return (
     <div style={style.container}>
-      <HeadingBold fontSize={useBreakpoint() ? 40 : 30}>
+      <HeadingBold fontSize={useBreakpoint() ? 40 : 25}>
         The latest from my GitHub:
       </HeadingBold>
       <div style={style.subContainer}>

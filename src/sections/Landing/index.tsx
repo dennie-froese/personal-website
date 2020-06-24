@@ -16,11 +16,13 @@ export default function Landing() {
         <ContactLogos />
       </div>
       <div style={style.container}>
-        <HeadinBold fontSize={useBreakpoint() ? 60 : 40}>
+        <HeadinBold fontSize={useBreakpoint() ? 60 : 30}>
           Front-end Engineer & Designer
         </HeadinBold>
         <div style={style.subContainer}>
-          <SubHeading>I love to design and develop user interfaces!</SubHeading>
+          <SubHeading fontSize={useBreakpoint() ? 25 : 15}>
+            I love to design and develop user interfaces!
+          </SubHeading>
           <img style={style.avatar} src={Avatar} alt="" />
         </div>
       </div>
