@@ -58,14 +58,28 @@ export default function ContactLogos() {
       {navOpened ? (
         <div className={navClassName}>
           <img
-            onClick={() => fire("https://github.com/dennie-froese")}
+            onClick={() => {
+              fire("https://github.com/dennie-froese");
+              setNavOpened(!navOpened);
+            }}
             style={style.logos}
             src={Github}
             alt=""
           />
-          <img onClick={mail} style={style.logoGmail} src={gmail} alt="" />
           <img
-            onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
+            onClick={() => {
+              mail();
+              setNavOpened(!navOpened);
+            }}
+            style={style.logoGmail}
+            src={gmail}
+            alt=""
+          />
+          <img
+            onClick={() => {
+              fire("https://www.linkedin.com/in/dennie-froese/");
+              setNavOpened(!navOpened);
+            }}
             style={style.logoLinkedIn}
             src={Linkedin_black}
             alt=""
