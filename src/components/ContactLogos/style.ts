@@ -13,6 +13,11 @@ const style = {
     width: 38,
     height: 30,
     padding: 10
+  },
+  logoLinkedIn: {
+    width: 42,
+    height: 38,
+    padding: 10
   }
 } as { [key: string]: React.CSSProperties };
 

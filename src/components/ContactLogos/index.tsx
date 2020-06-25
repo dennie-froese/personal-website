@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./style";
 import gmail from "../../images/gmail.png";
 import Linkedin from "../../images/Linkedin.svg";
+import Linkedin_black from "../../images/Linkedin_black.png";
 import Github from "../../images/Github.png";
 import menu from "../../images/menu.png";
 import useBreakpoint from "../../hooks/useBreakpoint";
@@ -76,8 +77,8 @@ export default function ContactLogos() {
             onMouseOver={mouseOver}
             onMouseOut={mouseOut}
             onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
-            style={style.logos}
-            src={Linkedin}
+            style={style.logoLinkedIn}
+            src={Linkedin_black}
             alt=""
           />
           <img
