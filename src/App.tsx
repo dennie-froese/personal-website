@@ -5,7 +5,6 @@ import Landing from "./sections/Landing";
 import Companies from "./sections/Companies";
 import Skills from "./sections/Skills";
 import Testimonials from "./sections/Testimonials";
-import GitHub from "./sections/Github";
 
 export default function App() {
   return (
@@ -15,7 +14,6 @@ export default function App() {
       <Skills />
       <Companies />
       <Testimonials />
-      <GitHub />
     </div>
   );
 }
