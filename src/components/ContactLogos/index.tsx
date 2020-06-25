@@ -58,24 +58,13 @@ export default function ContactLogos() {
       {navOpened ? (
         <div className={navClassName}>
           <img
-            onMouseOver={mouseOver}
-            onMouseOut={mouseOut}
             onClick={() => fire("https://github.com/dennie-froese")}
             style={style.logos}
             src={Github}
             alt=""
           />
+          <img onClick={mail} style={style.logoGmail} src={gmail} alt="" />
           <img
-            onMouseOver={mouseOver}
-            onMouseOut={mouseOut}
-            onClick={mail}
-            style={style.logoGmail}
-            src={gmail}
-            alt=""
-          />
-          <img
-            onMouseOver={mouseOver}
-            onMouseOut={mouseOut}
             onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
             style={style.logoLinkedIn}
             src={Linkedin_black}
