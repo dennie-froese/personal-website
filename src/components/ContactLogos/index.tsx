@@ -31,7 +31,10 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={() => fire("https://github.com/dennie-froese")}
+        onClick={e => {
+          fire("https://github.com/dennie-froese");
+          mouseOut(e);
+        }}
         style={style.logos}
         src={Github}
         alt=""
@@ -39,7 +42,10 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={mail}
+        onClick={e => {
+          mail();
+          mouseOut(e);
+        }}
         style={style.logoGmail}
         src={gmail}
         alt=""
@@ -47,7 +53,10 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={() => fire("https://www.linkedin.com/in/dennie-froese/")}
+        onClick={e => {
+          fire("https://www.linkedin.com/in/dennie-froese/");
+          mouseOut(e);
+        }}
         style={style.logos}
         src={Linkedin}
         alt=""
