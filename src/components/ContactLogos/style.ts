@@ -15,7 +15,7 @@ const style = {
     padding: 10
   },
   logoLinkedIn: {
-    width: 42,
+    width: 45,
     height: 38,
     padding: 10
   }

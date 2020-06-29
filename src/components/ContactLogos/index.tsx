@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./style";
 import gmail from "../../images/gmail.png";
+import gmail_black from "../../images/gmail_black.png";
 import Linkedin from "../../images/Linkedin.svg";
 import Linkedin_black from "../../images/Linkedin_black.png";
 import Github from "../../images/Github.png";
@@ -81,7 +82,7 @@ export default function ContactLogos() {
               setNavOpened(!navOpened);
             }}
             style={style.logoGmail}
-            src={gmail}
+            src={gmail_black}
             alt=""
           />
           <img
