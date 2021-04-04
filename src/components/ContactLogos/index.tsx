@@ -6,6 +6,7 @@ import Linkedin from "../../images/Linkedin.svg";
 import Linkedin_black from "../../images/Linkedin_black.png";
 import Github from "../../images/Github.png";
 import menu from "../../images/menu.png";
+import menuX from "../../images/MenuX.png";
 import useBreakpoint from "../../hooks/useBreakpoint";
 
 export default function ContactLogos() {
@@ -32,7 +33,7 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={e => {
+        onClick={(e) => {
           fire("https://github.com/dennie-froese");
           mouseOut(e);
         }}
@@ -43,7 +44,7 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={e => {
+        onClick={(e) => {
           mail();
           mouseOut(e);
         }}
@@ -54,7 +55,7 @@ export default function ContactLogos() {
       <img
         onMouseOver={mouseOver}
         onMouseOut={mouseOut}
-        onClick={e => {
+        onClick={(e) => {
           fire("https://www.linkedin.com/in/dennie-froese/");
           mouseOut(e);
         }}
@@ -98,7 +99,7 @@ export default function ContactLogos() {
             className={"menuButton"}
             onClick={() => setNavOpened(!navOpened)}
             style={style.logos}
-            src={menu}
+            src={menuX}
             alt=""
           />
         </div>
